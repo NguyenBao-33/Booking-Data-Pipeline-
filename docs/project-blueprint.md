@@ -33,11 +33,11 @@ Project này xây dựng một **data pipeline** để thu thập dữ liệu kh
 
 Xây dựng một **batch-oriented hotel data pipeline** tạo ra dữ liệu:
 
-- ✅ Có cấu trúc
-- ✅ Có thể kiểm tra chất lượng
-- ✅ Có thể xử lý lại (reprocessable)
-- ✅ Có thể mở rộng (scalable)
-- ✅ Sẵn sàng phục vụ các hệ thống phân tích hoặc machine learning downstream
+-  Có cấu trúc
+-  Có thể kiểm tra chất lượng
+-  Có thể xử lý lại (reprocessable)
+-  Có thể mở rộng (scalable)
+-  Sẵn sàng phục vụ các hệ thống phân tích hoặc machine learning downstream
 
 ## 3. Scope
 
@@ -91,8 +91,6 @@ Pipeline phải lưu trữ dữ liệu raw **trước khi transformation** để
 - Debug
 - Audit
 - Reproduce
-
-> ⚠️ Raw data **không được overwrite** một cách tùy tiện.
 
 ### 5.5. Bronze Layer
 Pipeline phải tạo Bronze layer từ raw data để phục vụ các bước xử lý tiếp theo.
