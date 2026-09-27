@@ -159,11 +159,11 @@ Dữ liệu sạch, có cấu trúc, phục vụ cho **Recommendation System** v
 
 ## 9. Success Criteria
 
-- [ ] Pipeline chạy end-to-end từ Source Discovery đến Gold Layer
-- [ ] Raw data được lưu trữ đầy đủ và có thể reprocess
-- [ ] Chạy lại pipeline không tạo dữ liệu trùng lặp (idempotent)
-- [ ] Incremental run chỉ xử lý dữ liệu mới hoặc thay đổi
-- [ ] Data quality checks được áp dụng giữa các layer
-- [ ] Log thể hiện rõ số record thành công/thất bại và thời gian xử lý
-- [ ] Các component chính có unit test
-- [ ] Gold dataset sẵn sàng làm input cho Recommendation System
+- Pipeline chạy end-to-end từ Source Discovery đến Gold Layer
+- Raw data được lưu trữ đầy đủ và có thể reprocess
+- Chạy lại pipeline không tạo dữ liệu trùng lặp 
+- Incremental run chỉ xử lý dữ liệu mới hoặc thay đổi
+- Data quality checks được áp dụng giữa các layer
+- Log thể hiện rõ số record thành công/thất bại và thời gian xử lý
+- Các component chính có unit test
+- Gold dataset sẵn sàng làm input cho Recommendation System
