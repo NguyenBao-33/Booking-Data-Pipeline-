@@ -1,13 +1,16 @@
 [project]
 name = "booking-pipeline"
 version = "0.1.0"
-description =  "Local-first data pipeline for hotel data"
+description = "Local-first data pipeline for hotel data"
 readme = "README.md"
 authors = [
     { name = "Nguyen Bao", email = "nguyenbao04024@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = []
+
+[project.scripts]
+booking-pipeline = "booking_pipeline.main:main"
 
 [build-system]
 requires = ["uv_build>=0.12.5,<0.13.0"]
