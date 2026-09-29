@@ -1,6 +1,8 @@
 from pathlib import Path
 import logging 
 
+from booking_pipeline.config import settings
+
 def setup_logging() -> None: 
     logger = logging.getLogger()
 
@@ -8,9 +10,9 @@ def setup_logging() -> None:
         return 
     logger.setLevel(logging.DEBUG)
 
-    #chỉ in ra những log mức INFO ra terminal
+   
     console_handler = logging.StreamHandler()
-    console_handler.setLevel(logging.INFO)
+    console_handler.setLevel(settings.log_level)
 
     formatter = logging.Formatter(
         "%(asctime)s | %(levelname)s | %(name)s | %(message)s"
