@@ -1,3 +1,4 @@
+from pathlib import Path
 import logging 
 
 def setup_logging() -> None: 
@@ -17,10 +18,10 @@ def setup_logging() -> None:
 
     console_handler.setFormatter(formatter)
 
-    file_handler = logging.FileHandler(
-        "logs/pipeline.log",
-        encoding="utf-8",
-    )
+    log_dir = Path("logs")
+    log_dir.mkdir(parents=True, exist_ok=True)   
+
+    file_handler = logging.FileHandler(log_dir / "pipeline.log", encoding="utf-8")
     file_handler.setLevel(logging.DEBUG)
     file_handler.setFormatter(formatter)
 
